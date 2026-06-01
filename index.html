@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Forja Brindes | Geek Store RPG de Produtos Personalizados</title>
+    <meta
+      name="description"
+      content="Geek Store de produtos personalizados com estética RPG premium. Canecas, quadros, camisetas e brindes sob encomenda em Timon e Teresina."
+    />
+    <meta
+      property="og:title"
+      content="Forja Brindes | Geek Store RPG de Produtos Personalizados"
+    />
+    <meta
+      property="og:description"
+      content="Itens personalizados forjados para transformar ideias em presentes, memórias e estilo."
+    />
+    <meta property="og:image" content="assets/logo.png" />
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@600;700;800&family=Sora:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Forja Brindes",
+        "sameAs": ["https://www.instagram.com/forjabrindes/"],
+        "description": "Geek Store RPG de produtos personalizados em Timon e Teresina.",
+        "areaServed": ["Timon", "Teresina"],
+        "openingHours": ["Mo-Fr 08:00-20:00", "Sa 08:00-15:00"]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="spark-layer" id="sparkLayer"></div>
+    <header class="topbar">
+      <div class="container">
+        <a class="brand" href="index.html"
+          ><img src="assets/logo.png" alt="Forja Brindes" />
+          <div><b>Forja Brindes</b><span>Guilda de itens</span></div></a
+        >
+        <nav class="nav">
+          <a class="active" href="index.html">Loja</a
+          ><a href="produtos.html">Catálogo</a
+          >
+          <a href="#forge">Personalizar</a><a href="#shopee">Shopee</a
+          ><a href="#contact">Contato</a>
+        </nav>
+        <div class="search-mini">
+          <span>⌕</span><input id="headerSearch" placeholder="Buscar item..." />
+        </div>
+        <a class="btn btn-ember desktop-cta" href="#forge">Forjar pedido</a
+        ><button class="hamb" id="hamb">☰</button>
+      </div>
+      <div class="mobile-drawer" id="mobileDrawer">
+        <input id="mobileSearch" placeholder="Buscar produto" /><a
+          href="produtos.html"
+          >Loja completa</a
+        ><a href="#collections">Coleções</a
+        ><a href="#legendary">Itens lendários</a
+        ><a href="#forge">Personalizar</a><a href="#social">Instagram</a
+        ><a href="admin.html">Admin</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">Balcão da Forja • RPG Premium</div>
+            <h1>Itens personalizados para a sua próxima aventura.</h1>
+            <p>
+              Escolha uma base, envie sua ideia e deixe a Forja transformar em
+              uma peça única. Uma Geek Store com canecas, quadros, camisetas e
+              brindes feitos para presentear, colecionar e vender estilo.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-ember" href="produtos.html">Explorar itens</a
+              ><a class="btn btn-ghost" href="#forge">Forjar meu pedido</a>
+            </div>
+            <div class="guild-proof">
+              <div class="trust">
+                <b>Atendimento</b><span>pedido direto pelo WhatsApp</span>
+              </div>
+              <div class="trust">
+                <b>Shopee</b><span>compra por link quando disponível</span>
+              </div>
+              <div class="trust">
+                <b>Entrega local</b><span>Timon e Teresina</span>
+              </div>
+            </div>
+          </div>
+          <div class="forge-window">
+            <div class="forge-head">
+              <div>
+                <div class="eyebrow">Balcão da guilda</div>
+                <h2>Escolha o item. Envie sua ideia. A Forja cria.</h2>
+              </div>
+              <span class="seal">Forjado sob medida</span>
+            </div>
+            <div class="mock-forge">
+              <div class="flame"></div>
+              <a
+                class="floating-item item-a"
+                href="produto.html?slug=caneca-anime-mascaras"
+                ><img src="assets/caneca-anime.png" alt="Caneca anime" /><strong
+                  >Caneca Épica <span>R$49</span></strong
+                ></a
+              ><a
+                class="floating-item item-b"
+                href="produto.html?slug=camiseta-anime-custom"
+                ><img
+                  src="assets/camisa-black.png"
+                  alt="Camiseta personalizada"
+                /><strong>Camiseta Rara <span>R$45</span></strong></a
+              ><a
+                class="floating-item item-c"
+                href="produto.html?slug=quadro-casal-personalizado"
+                ><img
+                  src="assets/quadro-casal.png"
+                  alt="Quadro personalizado"
+                /><strong>Quadro Lendário <span>pedido</span></strong></a
+              >
+              <div class="anvil"></div>
+              <div class="rare-ticket">
+                <b>MISSÃO DE CRIAÇÃO</b>
+                <p>
+                  Transforme nome, frase, personagem, foto ou arte em um item
+                  personalizado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rail-wrap" id="collections">
+        <div class="container">
+          <div class="collection-rail" id="collectionRail"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Coleções da guilda</div>
+              <h2>Escolha sua coleção</h2>
+              <p class="lead">
+                Categorias com cara de cartas de loja: simples de entender, mas
+                com atmosfera geek.
+              </p>
+            </div>
+            <a class="btn btn-ghost" href="produtos.html">Ver catálogo</a>
+          </div>
+          <div class="collection-cards" id="collectionCards"></div>
+        </div>
+      </section>
+      <section class="section" id="legendary">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Destaque da Forja</div>
+              <h2>Item lendário da semana</h2>
+              <p class="lead">
+                Um destaque visual para o cliente enxergar valor e imaginar o
+                produto pronto.
+              </p>
+            </div>
+            <a class="btn btn-ghost" href="produtos.html">Ver todos</a>
+          </div>
+          <div id="legendaryCard" class="legendary-card"></div>
+        </div>
+      </section>
+      <section class="section" id="store">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Inventário disponível</div>
+              <h2>Inventário da Forja</h2>
+              <p class="lead">
+                Prévia dos itens com foco em produto, preço, raridade e ação
+                rápida.
+              </p>
+            </div>
+            <a class="btn btn-ember" href="produtos.html"
+              >Abrir loja completa</a
+            >
+          </div>
+          <div class="product-grid" id="homeGrid">
+            <div class="loading-card"></div>
+            <div class="loading-card"></div>
+            <div class="loading-card"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Insígnias de confiança</div>
+              <h2>Compra clara, criação combinada</h2>
+              <p class="lead">
+                A estética é RPG, mas a experiência precisa passar segurança
+                para qualquer cliente.
+              </p>
+            </div>
+          </div>
+          <div class="confidence-grid">
+            <div class="confidence-card">
+              <i>💬</i><b>WhatsApp direto</b>
+              <p>
+                Atendimento rápido para tirar dúvidas e combinar personalização.
+              </p>
+            </div>
+            <div class="confidence-card">
+              <i>📍</i><b>Timon e Teresina</b>
+              <p>Entrega local inicialmente nas duas cidades.</p>
+            </div>
+            <div class="confidence-card">
+              <i>🧾</i><b>Sob encomenda</b>
+              <p>Produtos personalizados são alinhados antes da produção.</p>
+            </div>
+            <div class="confidence-card">
+              <i>🛒</i><b>Link Shopee</b>
+              <p>
+                Quando houver anúncio, o cliente compra direto na plataforma.
+              </p>
+            </div>
+            <div class="confidence-card">
+              <i>⚒️</i><b>Peça única</b>
+              <p>Nome, arte, foto, tema ou referência do cliente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="forge">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Sistema de criação</div>
+              <h2>Forje o seu item personalizado</h2>
+              <p class="lead">
+                Um fluxo com atmosfera de missão, mas feito para vender de forma
+                clara.
+              </p>
+            </div>
+          </div>
+          <div class="forge-steps">
+            <div class="step">
+              <i>⚒️</i><b>1. Escolha a base</b>
+              <p>Caneca, quadro, camiseta, copo ou brinde.</p>
+            </div>
+            <div class="step">
+              <i>📜</i><b>2. Envie sua ideia</b>
+              <p>Nome, frase, foto, personagem, referência ou tema.</p>
+            </div>
+            <div class="step">
+              <i>🔥</i><b>3. A Forja cria</b>
+              <p>A personalização é preparada conforme o produto escolhido.</p>
+            </div>
+            <div class="step">
+              <i>📦</i><b>4. Receba ou compre</b>
+              <p>Combine pelo WhatsApp, receba localmente ou use Shopee.</p>
+            </div>
+            <div class="step cta-step">
+              <p>
+                Transforme sua ideia em um item único. Fale com a gente e
+                comece seu pedido agora.
+              </p>
+              <div class="hero-actions items-center">
+                <a
+                  class="btn btn-ember"
+                  target="_blank"
+                  href="https://wa.me/558688843379?text=Ol%C3%A1%21%20Quero%20forjar%20um%20item%20personalizado%20com%20a%20Forja%20Brindes."
+                  >WhatsApp</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="shopee">
+        <div class="container">
+          <div class="legendary-card">
+            <div>
+              <div class="eyebrow">Compra simples</div>
+              <h2>Compre pela Shopee ou personalize direto com a Forja</h2>
+              <p class="lead">
+                Alguns produtos já possuem anúncio na Shopee. Outros são feitos
+                sob encomenda e precisam ser combinados pelo WhatsApp antes da
+                criação.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-ember" href="produtos.html?tipo=shopee"
+                  >Ver itens com Shopee</a
+                ><a
+                  class="btn btn-ghost"
+                  target="_blank"
+                  href="https://wa.me/558688843379?text=Ol%C3%A1%21%20Quero%20personalizar%20um%20produto%20com%20a%20Forja%20Brindes."
+                  >Pedir personalização</a
+                >
+              </div>
+            </div>
+            <div class="photo">
+              <img src="assets/caneca-player.png" alt="Produto na Shopee" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="social">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Vitrine social</div>
+              <h2>Peças que saíram da Forja</h2>
+              <p class="lead">
+                Feed real do Instagram para mostrar movimento, produtos e prova
+                social.
+              </p>
+            </div>
+            <a
+              class="btn btn-ghost"
+              href="https://www.instagram.com/forjabrindes/"
+              target="_blank"
+              >Ver Instagram</a
+            >
+          </div>
+          <div class="social-box">
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div
+              class="elfsight-app-93e99fc6-c322-42bf-ac50-18b49ebe7817"
+              data-elfsight-app-lazy
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html"
+            ><img src="assets/logo.png" alt="Forja" />
+            <div><b>Forja Brindes</b><span>Guilda de itens</span></div></a
+          >
+          <p>
+            Itens personalizados forjados para transformar ideias em presentes,
+            memórias e estilo.
+          </p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <p><a href="produtos.html">Loja</a></p>
+          <p><a href="#forge">Personalizar</a></p>
+          <p><a href="#shopee">Shopee</a></p>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <p>@forjabrindes</p>
+          <p>
+            <a href="https://wa.me/558688843379" target="_blank">WhatsApp</a>
+          </p>
+          <p>Seg–Sex 8h–20h</p>
+          <p>Sáb 8h–15h</p>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="btn btn-ember whats-float"
+      href="https://wa.me/558688843379"
+      target="_blank"
+      >WhatsApp</a
+    ><button class="btn btn-ghost top-float" id="toTop">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
