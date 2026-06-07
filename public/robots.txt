@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /admin/
-Sitemap: https://www.forjabrindes.pages.dev/sitemap.xml
+Sitemap: https://www.forjabrindes.com.br/sitemap.xml
