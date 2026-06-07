@@ -1,0 +1,13 @@
+{
+  "name": "Forja Brindes",
+  "short_name": "Forja",
+  "description": "Geek Store de produtos personalizados em Timon e Teresina.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B0D",
+  "theme_color": "#0B0B0D",
+  "icons": [
+    { "src": "/logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

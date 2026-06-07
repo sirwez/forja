@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forja Brindes</title>
+    <script>
+      (function () {
+        var segments = window.location.pathname.split('/').filter(Boolean);
+        var isGithubPages = window.location.hostname.endsWith('github.io');
+        var base = isGithubPages && segments.length ? '/' + segments[0] + '/' : '/';
+        var routePath = window.location.pathname;
+        if (routePath.indexOf(base) === 0) {
+          routePath = '/' + routePath.slice(base.length);
+        }
+        if (routePath === '//') routePath = '/';
+        sessionStorage.setItem('forja:redirect', routePath + window.location.search + window.location.hash);
+        window.location.replace(base);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
